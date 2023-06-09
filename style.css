@@ -1,0 +1,160 @@
+:root {
+    --left-side-width: clamp(600px, 43vw, 700px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../../fonts/Norse-Bold.otf') format('truetype'),
+         url('../../fonts/Roboto-Regular.ttf') format('truetype'),
+         url('../../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.leaves {
+    position: absolute;
+    height: 100vh;
+    width: var(--left-side-width);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: var(--left-side-width);
+    color: white;
+}
+
+.left > span {
+    opacity: 85%;
+    margin-bottom: 10px;
+}
+
+.hero {
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.4);
+    width: var(--left-side-width);
+    height: 15%;
+    font-family: 'Norse',sans-serif;
+    font-size: 6rem;
+}
+
+.hero > img {
+    max-height: 85%;
+    width: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F9FAFB;
+}
+
+.text {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0 10vw 0;
+}
+
+
+.caption {
+    display: block;
+    font-weight: 700;
+    margin: 15px 0 15px;
+    font-size: 1.4rem;
+}
+
+.create-account > button {
+    background-color: #596D48;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    border: solid 1.5px blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: solid 1.5px #E5E7EB;
+    border-radius: 5px;
+    height: 1.8rem;
+    width: 230px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.right-row {
+    margin-top: 39px;
+    padding-left: 60px;
+}
+
+.create-account button {
+    width: 200px;
+    height: 45px;
+    margin: 30px 0 30px;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.create-account a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.create-account p {
+    font-weight: 600;
+}
+
+#myForm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 100px 0;
+    color: #1F2937;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#myForm > * , .create-account > * {
+    scale: 1.1;
+}
+
+.create-account {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matcher {
+    position: absolute;
+    font-size: 0.7rem;
+    color: red;
+}

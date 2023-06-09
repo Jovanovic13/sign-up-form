@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="pictures/halie-west-25xggax4bSA-unsplash.jpg" class="leaves" alt="leaves">
+    <div class="left">
+        <div class="hero">
+            <img src="pictures/odin-lined.png" alt="odin-logo">
+            <span>ODIN</span>
+        </div>
+        <span>Photo by <u>Halie West</u> on <u>Unsplash</u></span>
+    </div>
+    <div class="right">
+        <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
+            Sign up <em>now</em> to get started. <br>
+            <br>
+            You <em>know</em> you want to.
+        </div>
+        <form action="#" id="myForm">
+            <div>
+                <caption><span class="caption">Let's do this!</span></caption>
+                
+                <label for="firstname">FIRST NAME</label>
+                <br>
+                <input type="text" name="firstname" id="firstname" required>
+
+                <br>
+
+                <label for="email">EMAIL</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+
+                <br>
+
+                <label for="password">PASSWORD</label>
+                <br>
+                <input type="password" name="password" id="password" required>
+                <p class="matcher"></p>
+            </div>
+            <div class="right-row">
+                <br>
+                <label for="lastname">LAST NAME</label>
+                <br>
+                <input type="text" name="lastname" id="lastname" required>
+
+                <br>
+
+                <label for="phonenumber">PHONE NUMBER</label>
+                <br>
+                <input type="number" name="phonenumber" id="phonenumber">
+
+                <br>
+
+                <label for="confirmpw">CONFIRM PASSWORD</label>
+                <br>
+                <input type="password" name="confirmpw" id="confirmpw" required>
+            </div>
+        </form>
+        <div class="create-account">
+            <button type="submit" form="myForm">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
